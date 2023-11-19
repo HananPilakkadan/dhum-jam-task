@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
+  const { handleLogout } = useDashboard();
   const { userDetails } = useSelector((state) => state.dashboard);
   const { id } = useParams();
   //   const { handleSubmit } = useDashboard();
@@ -195,6 +196,9 @@ const Dashboard = () => {
               onClick={() => handleSubmit(values)}
             >
               Save
+            </button>
+            <button className={Style.LogoutBtn} onClick={() => handleLogout()}>
+              Sign Out
             </button>
           </div>
         </div>

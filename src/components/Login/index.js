@@ -7,6 +7,7 @@ import { useLogin } from "../../Logic/Login/useLogin";
 import Style from "./Login.module.scss";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Loader from "../Loader";
 
 const LoginPage = () => {
   const { handleLogin } = useLogin();
@@ -26,7 +27,7 @@ const LoginPage = () => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
-  const { authError } = useSelector((state) => state.login);
+  const { authError, authDataStatus } = useSelector((state) => state.login);
 
   const handleShowPassword = () => {
     setShowPassword((prev) => !prev);
@@ -38,6 +39,8 @@ const LoginPage = () => {
         <div className="wrapper">
           <div className={Style.loginBox}>
             <h1 className={Style.loginBox_heading}>venue admin login </h1>
+            {authDataStatus == "loading" && <Loader />}
+
             <Formik
               initialValues={initialValues}
               validationSchema={SignupSchema}

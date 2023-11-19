@@ -94,6 +94,25 @@
     border: 1px solid #fff;
   }
 }
+.LogoutBtn {
+  cursor: pointer;
+  width: 680px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #6741d9;
+  transition: 0.2s ease;
+  &:hover {
+    background-color: #6741d9;
+  }
+}
 .graphContainer {
   width: 600px;
   margin: 0 auto;
