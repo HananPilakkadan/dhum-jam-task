@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dhum-jam-task/static/css/main.eb8a5f92.css",
+    "main.js": "/dhum-jam-task/static/js/main.49bc4ab0.js",
+    "index.html": "/dhum-jam-task/index.html",
+    "main.eb8a5f92.css.map": "/dhum-jam-task/static/css/main.eb8a5f92.css.map",
+    "main.49bc4ab0.js.map": "/dhum-jam-task/static/js/main.49bc4ab0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb8a5f92.css",
+    "static/js/main.49bc4ab0.js"
+  ]
+}
