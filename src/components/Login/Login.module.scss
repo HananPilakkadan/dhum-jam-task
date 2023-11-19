@@ -1,0 +1,88 @@
+.loginBox {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  &_heading {
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  &_input_box {
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 16px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 14px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &_input {
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  &_SubmitBtn {
+    cursor: pointer;
+    width: 100%;
+    background-color: #6741d9;
+    color: #fff;
+    font-size: 16px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    margin-top: 40px;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      border: 1px solid #f0c3f1;
+      background-color: #5234ac;
+    }
+  }
+  &_register {
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+    transition: 0.3s ease-in;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &_errorMsg {
+    display: block;
+    margin: 14px 0 14px 16px;
+    text-align: left;
+    color: red;
+  }
+}
+form {
+  width: 100%;
+}
+.eye_icon {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
