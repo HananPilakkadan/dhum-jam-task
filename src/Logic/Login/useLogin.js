@@ -19,7 +19,8 @@ export const useLogin = () => {
       localStorage.setItem("token", token);
       localStorage.setItem("isLoggedIn", true);
       setAuthToken(token);
-      if (location.state?.from) {
+      console.log("here");
+      if (userId) {
         navigate(`${userId}/dashboard`);
         toast.success("Successfully Logged in", {
           position: "top-right",

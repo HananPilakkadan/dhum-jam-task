@@ -6,7 +6,6 @@ import { updateData } from "../../store/slices/dashboardSlice";
 export const useDashboard = () => {
   const dispatch = useDispatch();
   const { updatedData } = useSelector((state) => state.dashboard);
-  console.log(updatedData);
   const { id } = useParams();
 
   const handleSubmit = (vlaues) => {
